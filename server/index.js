@@ -1,11 +1,11 @@
-var express = require('express');
+const express = require('express');
 const { truncate } = require('fs');
-var { createProxyMiddleware } = require('http-proxy-middleware');
-var path = require('path');
-var port = 8000;
-var bodyParser = require('body-parser');
+const { createProxyMiddleware } = require('http-proxy-middleware');
+const path = require('path');
+const port = 8000;
+const bodyParser = require('body-parser');
 
-var app = express();
+const app = express();
 app.use(express.static('public'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
