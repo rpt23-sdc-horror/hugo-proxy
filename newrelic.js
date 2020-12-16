@@ -1,3 +1,4 @@
+var apiKey = require('./newrelicAPI');
 'use strict'
 /**
  * New Relic agent configuration.
@@ -13,7 +14,7 @@ exports.config = {
   /**
    * Your New Relic license key.
    */
-  license_key: 'bf9846756919418fc3e7481ee759d450f927NRAL',
+  license_key: apiKey.key,
   /**
    * This setting controls distributed tracing.
    * Distributed tracing lets you see the path that a request takes through your

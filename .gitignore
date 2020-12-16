@@ -106,4 +106,5 @@ dist
 # webpack bundle
 bundle-proxy.js
 
-newrelicAPI
+# API keys
+newrelicAPI.js
