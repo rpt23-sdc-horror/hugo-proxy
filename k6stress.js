@@ -12,6 +12,8 @@ export let options = {
     { duration: '2m', target: 400 }, // beyond the breaking point
     { duration: '5m', target: 400 },
     { duration: '10m', target: 0 }, // scale down. Recovery stage.
+    // {duration: "1m", target: 300},
+    // {duration: "5m", target: 300}
   ],
 };
 

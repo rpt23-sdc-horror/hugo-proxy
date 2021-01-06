@@ -19,7 +19,8 @@
     "build": "webpack -p",
     "start": "node server/index.js",
     "test": "jest --coverage",
-    "test:watch": "jest --watch --coverage"
+    "test:watch": "jest --watch --coverage",
+    "k6": "k6 run k6stress.js"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.11.5",
@@ -36,6 +37,7 @@
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
     "morgan": "^1.10.0",
+    "newrelic": "^7.0.2",
     "node-fetch": "^2.6.1",
     "prettier": "^2.1.2",
     "prop-types": "^15.7.2",
